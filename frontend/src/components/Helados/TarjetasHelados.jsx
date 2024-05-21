@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card';
 import React, { useState, useEffect } from 'react';
-import '../style/style.css';
+import '../../style/style.css';
 
 
 function TarjetasProductos() {

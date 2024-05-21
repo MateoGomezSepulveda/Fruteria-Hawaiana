@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Navigate , Link } from 'react-router-dom';
 import '../../style/style.css';
 // import Button2 from './button';
-import TarjetasProductos from '../TarjetasProductos';
+import TarjetasProductos from '../Helados/TarjetasHelados';
 
 function Admin() {
     const [categorias, setCategorias] = useState([]);
@@ -50,7 +50,7 @@ function Admin() {
                         {categorias.map((categoria, index) => (
                             <tr key={index}>
                                 <td>
-                                    <Link to={`/${categoria.nombre}`}>{categoria.nombre}</Link>
+                                <a href={`/${categoria.nombre}`}>{categoria.nombre}</a>
                                 </td>
                             </tr>
                         ))}
@@ -60,7 +60,7 @@ function Admin() {
             <div className="parte-media">
                 <div>
                     <h2>Productos</h2>
-                    <a href="/configurar">Configurar</a>
+                    <Link to="/configurar">Configurar</Link>
                 </div>
                 <table className="table table-custom">
                     <thead>

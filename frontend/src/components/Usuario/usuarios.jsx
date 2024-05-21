@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Navigate  } from 'react-router-dom';
-import TarjetasProductos from '../TarjetasProductos';
+import TarjetasProductos from '../Helados/TarjetasHelados';
 import '../../style/style.css';
 
 
