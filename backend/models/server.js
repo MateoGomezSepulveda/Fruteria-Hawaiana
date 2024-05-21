@@ -9,10 +9,13 @@ class Server {
         this.port = process.env.PORT
 
         this.paths = {
-            heladosPath: '/api/helados',
-            categoriasPath: '/api/categorias',
             usuariosPath: '/api/usuarios',
             authPath : '/api/auth',
+            categoriasPath: '/api/categorias',
+            heladosPath: '/api/helados',
+            ensaladasPath: '/api/ensaladas',
+            desayunosPath: '/api/desayunos',
+            empanadasPath: '/api/empanadas'
         }
         
 
@@ -43,6 +46,9 @@ class Server {
         this.app.use(this.paths.authPath, require("../routes/auth.routes.js"));
         this.app.use(this.paths.categoriasPath, require("../routes/categoria.routes.js"));
         this.app.use(this.paths.heladosPath, require("../routes/helado.routes.js") );
+        this.app.use(this.paths.ensaladasPath, require("../routes/ensalada.routes.js") );
+        this.app.use(this.paths.desayunosPath, require("../routes/desayuno.routes.js") );
+        this.app.use(this.paths.empanadasPath, require("../routes/empanada.routes.js") );
     }
 
     listen(){
