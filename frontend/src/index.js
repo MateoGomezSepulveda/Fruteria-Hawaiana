@@ -1,13 +1,12 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom'; 
+import { BrowserRouter } from 'react-router-dom';
 
 import App from './App'; 
+
 document.title = 'Fruteria Hawaiana';
-const container = document.getElementById('root');
 
-const root = createRoot(container);
-
+const root = createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <App />
