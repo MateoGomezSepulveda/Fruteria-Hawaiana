@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Login from './components/login/login';
+import Helados from './components/Helados/Helados';
+import Admin from './components/Admin/admin';
+import Usuario from './components/Usuario/usuarios';
+import Configurar from './components/configurar/configurar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/usuario" element={<Usuario />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/HELADOS" element={<Helados />} />
+        <Route path="/configurar" element={<Configurar />} />
+      </Routes>
   );
 }
 
