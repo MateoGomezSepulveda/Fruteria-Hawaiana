@@ -47,8 +47,8 @@ function Configurar() {
               )}
               <table className="table table-custom">
                   <tbody className="cardsCategoria" id="datosCategoria">
-                      {categorias.map((categoria, index) => (
-                          <tr key={index}>
+                      {categorias.map((categoria, _id) => (
+                          <tr key={_id}>
                               <td>
                                   <a href={`${categoria.nombre}`}>{categoria.nombre}</a>
                               </td>
