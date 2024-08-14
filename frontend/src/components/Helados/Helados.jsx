@@ -72,22 +72,7 @@ function Helados() {
               </table>
           </div>
           <div className="parte-derecho" id="detalles">
-              <div className="teclado">
-                  <button id="imprimirBtn">Imprimir</button>
-                  <div className="botones-num">
-                      <button className="numero">1</button>
-                      <button className="numero">2</button>
-                      <button className="numero">3</button>
-                      <button className="numero">4</button>
-                      <button className="numero">5</button>
-                      <button className="numero">6</button>
-                      <button className="numero">7</button>
-                      <button className="numero">8</button>
-                      <button className="numero">9</button>
-                      <button className="borrar">Borrar</button>
-                      <button className="numero">0</button>
-                  </div>
-              </div>
+              
           </div>
       </div>
   );

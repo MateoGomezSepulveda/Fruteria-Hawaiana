@@ -24,8 +24,8 @@
   
   .parte-izquierda {
 
-    background-color: #ffb9e2;
-    border-right: 2px solid rgb(255, 255, 255);
+    background-color: #ffffff;
+    border-right: 2px solid rgb(255, 0, 251);
     padding-left: 2rem;
     padding-right: 4rem;
     border-radius: 10px;
@@ -78,11 +78,11 @@
   .parte-media {
     display: flex;
     flex-direction: column;
-    background-color: #ffb9e2;
+    background-color: #ffffff;
     flex: 2;
     padding: 2rem;
     border-radius: 12px;
-    border-right: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 0, 251);
     overflow-y: auto;
   }
 
@@ -102,7 +102,7 @@
 
 /* ----------------------------------------Parte-Derecha-------------------------------------- */
 .parte-derecho {
-  background-color: #ffb9e2;
+  background-color: #ffffff;
     flex: 0.6;
     padding: 2rem;
     border-radius: 10px;
